@@ -9,12 +9,12 @@
     "studio": "prisma studio"
   },
   "exports": {
-    "./prismaClient": "./src/prismaClient.js"
+    "./prismaClient": "./src/prismaClient.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "typescript": "^5.8.2"
   },

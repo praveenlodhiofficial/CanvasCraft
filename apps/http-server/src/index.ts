@@ -1,7 +1,10 @@
 import express from "express";
-import { appRouter } from "./routes/route";
-import config from "@repo/configuration/config";
+
+import { appRouter } from "./routes/route.js";
+import { config } from "@repo/configuration/config";
+
 const app = express();
+app.use(express.json());
 
 // -------------------------------------------------> ROUTES
 

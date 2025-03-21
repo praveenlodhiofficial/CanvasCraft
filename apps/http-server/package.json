@@ -11,13 +11,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "@repo/configuration": "workspace:*",
-    "@repo/zod": "workspace:*",
     "@repo/database": "workspace:*",
+    "@repo/zod": "workspace:*",
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "bcrypt": "^5.1.1",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "typescript": "^5.8.2"
   },
   "devDependencies": {
