@@ -14,6 +14,8 @@
   "type": "commonjs",
   "dependencies": {
     "@repo/configuration": "workspace:*",
+    "@repo/zod": "workspace:*",
+    "@repo/database": "workspace:*",
     "@types/express": "^5.0.1",
     "express": "^4.21.2",
     "typescript": "^5.8.2"
