@@ -1,6 +1,7 @@
 import { WebSocketServer } from "ws";
-import { WS_SERVER_PORT } from "@repo/configuration/config";
-const wss = new WebSocketServer({ port: WS_SERVER_PORT });
+import config from "@repo/configuration/config";
+
+const wss = new WebSocketServer({ port: config.WS_SERVER_PORT });
 
 wss.on("connection", (ws) => {
 
