@@ -2,11 +2,11 @@
 
 import type React from "react"
 
-import Input from "@repo/ui/Input"
+// import Input from "@repo/ui/input"
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Button } from "@repo/ui/Button"
+// import { Button } from "@repo/ui/button"
 
 export function AuthPage() {
   const [email, setEmail] = useState("")
@@ -73,12 +73,12 @@ export function AuthPage() {
                     />
                   </svg>
                 </div>
-                <Input
+                <input
                   id="email"
                   placeholder="you@example.com"
                   type="email"
                   value={email}
-                  onChange={setEmail}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 />
               </div>
@@ -112,20 +112,20 @@ export function AuthPage() {
                     />
                   </svg>
                 </div>
-                <Input
+                <input
                   id="password"
                   placeholder="••••••••"
                   type="password"
                   value={password}
-                  onChange={setPassword}
+                  onChange={(e) => setPassword(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 />
               </div>
             </div>
 
-            <Button className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 font-medium text-sm shadow-lg shadow-blue-600/20 hover:shadow-blue-700/30">
+            <button className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 font-medium text-sm shadow-lg shadow-blue-600/20 hover:shadow-blue-700/30">
               {isSignIn ? "Sign In" : "Create Account"}
-            </Button>
+            </button>
 
             {isSignIn && (
               <div className="relative flex items-center justify-center">
