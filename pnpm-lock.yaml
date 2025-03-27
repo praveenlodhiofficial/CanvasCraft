@@ -106,9 +106,15 @@ importers:
 
   apps/ws-server:
     dependencies:
+      '@types/jsonwebtoken':
+        specifier: ^9.0.9
+        version: 9.0.9
       '@types/ws':
         specifier: ^8.18.0
         version: 8.18.0
+      jsonwebtoken:
+        specifier: ^9.0.2
+        version: 9.0.2
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
