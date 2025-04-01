@@ -215,7 +215,7 @@ appRouter.get('/room/:slug', authMiddleware, async (req, res) => {
 });
 
 // Retrieves all drawing elements for a specific room
-appRouter.get('/drawings/:roomId', authMiddleware, async (req, res) => {
+appRouter.get('/drawings/:roomId', async (req, res) => {
     try {
         // Validate and parse roomId
         const roomId = Number(req.params.roomId);
